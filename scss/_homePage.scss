@@ -349,16 +349,140 @@
     max-width: 700px;
     font-weight: 500;
   }
-  .local-table {
-    th {
-      border-top: 30px solid transparent;
+  .local-card {
+    overflow: auto;
+    padding-bottom: 20px;
+    .local-list {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      min-width: 700px;
+      .local-item {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 64px) / 5);
+
+        vertical-align: top;
+      }
+      .local-title-letter {
+        margin-bottom: 5px;
+      }
+      .place {
+        color: #373737;
+
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.reviews {
+  background-color: var(--background-accent);
+}
+.question {
+  background-color: var(--background-accent);
+  .container {
+    display: flex;
+    gap: 16px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .question-left {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      order: 2;
+    }
+    img {
+      width: 100%;
+      height: 353px;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border-radius: 12px;
+    }
+    .text {
+      text-align: left;
+      a {
+        color: black;
+      }
+    }
+  }
+
+  .gustion-right {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .section-title {
+      text-align: left;
+      margin: 0;
+    }
+    .question-list {
+      margin-top: 16px;
+    }
+    .guestion-item {
+      border-bottom: 1px solid #bebebe;
+      padding: 16px 0;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      img {
+        transition: all 0.1s linear;
+      }
+      img.open {
+        transform: rotate(-180deg);
+        margin: 0;
+      }
+    }
+    .guestion-title {
+      font-weight: 500;
+    }
+    .text {
       text-align: left;
     }
-    td:not(:last-child) {
-      border-right: 80px solid transparent;
+    .answer {
+      height: 0px;
+      font-size: 0px;
+      transition: all 0.3s linear;
     }
-    td {
-      vertical-align: top;
+    .open {
+      margin-top: 16px;
+      font-size: 16px;
+      height: 100%;
     }
+  }
+}
+.gallery {
+  .container {
+  }
+  .gallery-list {
+    position: relative;
+    padding-bottom: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .gallery-item {
+    width: calc((100% - 48px) / 4);
+    background-color: var(--background-accent);
+    border-radius: 12px;
+    overflow: hidden;
+    @media screen and (max-width: 800px) {
+    }
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  .gallery-info {
+    padding: 12px;
+  }
+  .text {
+    text-align: center;
   }
 }

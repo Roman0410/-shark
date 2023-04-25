@@ -1,13 +1,43 @@
-$(".hero-slider").slick({
-  slidesToShow: 1,
+$(" .reviews-slider ").slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
-  fade: true,
-  cssEase: "linear",
+  breakpoint: 768,
+
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
 });
-$(".news-slider").slick({
-  slidesToShow: 7,
+$(" .gallery-list ").slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
   arrows: false,
+  breakpoint: 768,
+  autoplay: true,
+  autoplaySpeed: 1500,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
 });

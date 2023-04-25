@@ -3,13 +3,10 @@ $(document).ready(function () {
     $(".header-nav").toggleClass("active");
     $(".header-burger").toggleClass("active");
   });
-  $(".select-location").click(function (event) {
-    $(this).closest("div").find("img").toggleClass("open");
-    $(".location-list").toggleClass("hidden");
-  });
-  $(".location-item").click(function (event) {
-    $(".location-item").removeClass("select");
-    $(this).toggleClass("select");
-    $(".location-txt").text($(".select").text());
+  $(".guestion-item").click(function (event) {
+    // $(".answer").toggleClass("open");
+    // $(".answer").removeClass("open");
+    $(this).closest("li").find(".answer").toggleClass("open");
+    $(this).closest("li").find("img").toggleClass("open");
   });
 });
