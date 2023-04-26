@@ -60,6 +60,7 @@
     .follow {
       padding-top: 15px;
       font-size: 17px;
+      font-weight: 600;
       color: #ffffff;
       width: 100%;
       @media screen and (max-width: 1200px) {
@@ -74,6 +75,30 @@
       border-radius: 12px;
     }
     .soc-icon {
+    }
+  }
+  .footer-local {
+    h3 {
+      color: #ffffff;
+      padding-top: 15px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    .text {
+    }
+    .areas-list {
+      display: flex;
+      gap: 16px;
+    }
+    .area-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      a {
+        text-transform: capitalize;
+        color: #b7b7b7;
+        text-decoration: underline;
+      }
     }
   }
 }

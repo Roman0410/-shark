@@ -982,7 +982,6 @@ header {
 .footer .social .follow {
   padding-top: 15px;
   font-size: 17px;
-  font-weight: 600;
   color: #ffffff;
   width: 100%;
 }
@@ -994,25 +993,13 @@ header {
 .footer .social .soc-link {
   border-radius: 12px;
 }
-.footer .footer-local h3 {
-  color: #ffffff;
-  padding-top: 15px;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-}
 .footer .footer-local .areas-list {
   display: flex;
   gap: 16px;
 }
-.footer .footer-local .area-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 .footer .footer-local .area-item a {
   text-transform: capitalize;
-  color: #b7b7b7;
-  text-decoration: underline;
+  color: #ffffff;
 }
 
 .events .events-top {
