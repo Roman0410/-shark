@@ -13,7 +13,7 @@
     }
     @media screen and (min-width: 1200px) {
       gap: 70px;
-      justify-content: flex-start;
+      justify-content: space-between;
       flex-wrap: nowrap;
     }
   }
@@ -59,7 +59,7 @@
     flex-direction: column;
     .follow {
       padding-top: 15px;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 600;
       color: #ffffff;
       width: 100%;
@@ -83,21 +83,36 @@
       padding-top: 15px;
       margin-bottom: 20px;
       text-transform: capitalize;
+      font-weight: 600;
+      font-size: 18px;
+      @media screen and (max-width: 678px) {
+        text-align: center;
+      }
     }
     .text {
     }
     .areas-list {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 16px;
     }
     .area-item {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      min-width: 150px;
       a {
         text-transform: capitalize;
         color: #b7b7b7;
         text-decoration: underline;
+        transition: all 0.1s linear;
+        @media screen and (max-width: 678px) {
+          text-align: center;
+        }
+        &:hover {
+          color: var(--accent-color);
+        }
       }
     }
   }

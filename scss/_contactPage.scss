@@ -1,0 +1,94 @@
+.contact-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.522)),
+    url(../img/u185758.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-title {
+    color: #ffffff;
+  }
+  .text {
+    font-size: 20px;
+    text-align: center;
+    max-width: 700px;
+    color: rgb(240, 240, 240);
+  }
+}
+
+.contactForm {
+  padding: 50px 0;
+
+  h1 {
+    color: #ffffff;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.43);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    padding: 0;
+    @media screen and (max-width: 960px) {
+      flex-direction: column;
+    }
+  }
+  .hero-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    padding: 50px;
+    @media screen and (max-width: 960px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgb(231, 231, 231);
+      font-size: 18px;
+      &:hover {
+        color: #ffffff;
+        .icon {
+          fill: #ffffff;
+        }
+      }
+    }
+    .icon {
+      fill: #434343;
+      transition: all 0.1s linear;
+      width: 30px !important;
+    }
+    .text {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+    }
+  }
+  .hero-title {
+    text-transform: capitalize;
+  }
+
+  .hero-form {
+    max-width: 500px;
+    margin-left: auto;
+    @media screen and (max-width: 960px) {
+      margin: 0 auto;
+    }
+  }
+  .form-title {
+  }
+  .contact-form {
+  }
+}

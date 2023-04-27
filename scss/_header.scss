@@ -210,17 +210,19 @@ header {
     color: var(--accent-color);
   }
 }
-// .current {
-//   color: var(--accent-color);
-//   &::after {
-//     content: "";
-//     height: 3px;
-//     width: 100%;
-//     background-color: var(--accent-color);
-//     display: block;
-//     transition: all 0.2s linear;
-//     position: absolute;
-//     border-radius: 5px;
-//     bottom: -1px;
-//   }
-// }
+.current {
+  .nav-link {
+    color: var(--accent-color);
+  }
+  &::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--accent-color);
+    display: block;
+    transition: all 0.2s linear;
+    position: absolute;
+    border-radius: 5px;
+    bottom: -1px;
+  }
+}
