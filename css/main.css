@@ -1551,4 +1551,59 @@ header {
 }
 .reviews-table .date {
   color: rgb(148, 148, 148);
+}
+.fag-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.522)), url(../img/u185758.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+.fag-hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.fag-hero .hero-title {
+  color: #ffffff;
+}
+.fag-hero .text {
+  font-size: 20px;
+  text-align: center;
+  max-width: 700px;
+  color: rgb(240, 240, 240);
+}
+
+@media screen and (max-width: 980px) {
+  .question .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .question-left {
+    width: 100% !important;
+  }
+}
+.question-left .form-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.question-left .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.question-left .contact-form input {
+  border: none;
+  background-color: var(--background-accent);
+  padding: 12px 24px;
+}
+.question-left .contact-form textarea {
+  border: none;
+  background-color: var(--background-accent);
+  padding: 12px 24px;
+  font-family: inherit;
+  resize: none;
 }/*# sourceMappingURL=main.css.map */

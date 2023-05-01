@@ -1,0 +1,59 @@
+.fag-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.522)),
+    url(../img/u185758.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-title {
+    color: #ffffff;
+  }
+  .text {
+    font-size: 20px;
+    text-align: center;
+    max-width: 700px;
+    color: rgb(240, 240, 240);
+  }
+}
+.question {
+  .container {
+    @media screen and (max-width: 980px) {
+      flex-direction: column;
+    }
+  }
+}
+.question-left {
+  @media screen and (max-width: 980px) {
+    width: 100% !important;
+  }
+
+  .form-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    input {
+      border: none;
+      background-color: var(--background-accent);
+      padding: 12px 24px;
+    }
+    textarea {
+      border: none;
+      background-color: var(--background-accent);
+      padding: 12px 24px;
+      font-family: inherit;
+      resize: none;
+    }
+  }
+  .btn {
+  }
+}
